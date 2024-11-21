@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <header>
+
+      <!-- --NAV BAR START-- -->
+      <nav class="navbar">
+        <div class="navbar__elements-left">
+          <div class="navbar__item-logo">
+            <a href="../index.html">
+              <img
+                src="../assets/icons/Telia_Logotype_RGB_Purple.svg"
+                alt="Telia logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="navbar__elements-center">
+          <ul class="navbar__item-list">
+            <li class="navbar__item">
+              <a href="../pages/mobil.html">Mobil</a>
+            </li>
+            <li class="navbar__item">TV</li>
+            <li class="navbar__item">Internett</li>
+            <li class="navbar__item">
+              <a href="../pages/hjelp.html">Hjelp</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__elements-right">
+          <div class="navbar__item-search">
+            <a href="../pages/search.html">
+              <img
+                src="../assets/icons/Telia-icons-purple/search.svg"
+                alt="Search icon"
+              />
+            </a>
+            <label>Søk</label>
+          </div>
+          <div class="navbar__item-login">
+            <a href="../pages/login.html">
+              <img
+                src="../assets/icons/Telia-icons-purple/login.svg"
+                alt="Log inn icon"
+              />
+            </a>
+            <label>Logg inn</label>
+          </div>
+        </div>
+      </nav>
+      <!-- --NAV BAR END-- -->
+
+
+<!-- QUIZ STARTING -->
+<div class="quiz">
+  <button class="quiz__start">Start Quiz</button>
+  <div class="quiz__container hidden">
+    <img src="../assets/images/quiz/quiz.jpg" alt="Question Image" class="quiz__image" />
+    <p class="quiz__progress"></p>
+    <p class="quiz__question"></p>
+    <div class="quiz__answers"></div>
+    <button class="quiz__submit">Submit</button>
+  </div>
+  <div class="quiz__score-container">
+    <p class="quiz__score hidden"></p>
+    <button class="quiz__restart hidden">Restart Quiz</button>
+  </div>
+</div>
+<!-- QUIZ ENDING -->
+
+
+
+
+
+
+
+      
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* SHOWCASE */
+
+.showcase {
+    display: flex;
+    height: 350px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.showcase__item1 {
+    background-color: var(--deep-purple);
+    color: var(--white);
+    height: 100%;
+    width: 50%;
+    padding: var(--spacing-large);
+    margin-top: var(--spacing-medium);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    h1 {
+        font-family: "TeliaSansHeading-Heading";
+        font-size: 3.5rem;
+    }
+    p {
+        margin-top: var(--spacing-xsmall);
+        font-size: x-large;
+    }
+}
+
+.showcase__item2 {
+    width: 50%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   
+        margin-top: var(--spacing-medium);
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1200px) {
+    .showcase__item1, .showcase__item2 {
+        width: 100%; 
+    }
+
+    .showcase__item1 {
+        padding: var(--spacing-medium);
+    }
+}
+
+@media (max-width: 900px) {
+    .showcase__item2 {
+        display: none;
+    }
+    
+    .showcase__item1 {
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: large; 
+        }
+    }
+
+
+@media (max-width: 600px) {
+    .showcase__item1 {
+        h1 {
+            font-size: 2rem; 
+        }
+        p {
+            font-size: medium; 
+        }
+    }
+}
+
+
+

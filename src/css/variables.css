@@ -1,0 +1,32 @@
+:root {
+      /* Colors */
+  --deep-purple: #29003E;
+  --core-purple: #990AE3;
+  --light-purple: #FaE0FF;
+  --core-purple-25A: #9b0ae32a;
+  --core-pink: #E4B6FB;
+
+  --deep-beige: #5C524E;
+  --beige: #ECDED4;
+  --light-beige: #F8EEE8;
+
+  --teal: #00827C;
+  --red: #E4175C;
+
+  --off-black: #121214;
+  --light-gray: #F4F4F9;
+  --white: #FFFFFF;
+
+  --link-color: #1d684b;
+  --hover-color: #9b0ae33e;
+
+
+  /* Spacing */
+  --spacing-micro: 0.3rem;
+  --spacing-xsmall: 0.5rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+  --spacing-xlarge: 8rem;
+}
+

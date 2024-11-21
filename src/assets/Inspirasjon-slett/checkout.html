@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Header</h1>
+        <h2>Header sub</h2>
+        <nav>link home - link store</nav>
+      </header>
+      <main>
+        <section>Placeholder for chosen tshirt</section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <form>
+            <!-- This is the contact details -->
+             <fieldset>
+                <legend>Contact details</legend>
+
+
+                <label for="first-name">Name:</label>
+                <br>
+                <input 
+                    type="text" 
+                    name="first-name" 
+                    id="first-name" 
+                    placeholder="First Name" 
+                    required maxlength="50"
+                />
+                <label for="last-name"></label>
+                <input 
+                    type="text" 
+                    name="last-name" 
+                    id="last-name" 
+                    placeholder="Last name" 
+                    required maxlength="50"
+                />
+                <br>
+                <br>
+                <label for="address-street">Address: </label>
+                <br> 
+                <input 
+                    type="text" 
+                    name="address-street" 
+                    id="address-street" 
+                    placeholder="Street" 
+                    required
+                />
+                <label for="address-city"></label>
+                <input 
+                    type="text" 
+                    name="address-city" 
+                    id="address-city" 
+                    placeholder="City" 
+                    required
+                />
+                <label for="address-zip"></label>
+                <input 
+                    type="number" 
+                    name="address-zip" 
+                    id="address-zip" 
+                    placeholder="Zip code" 
+                    pattern="[0-9]"{4}
+                    required
+                />
+                <br>
+                <br>
+                <label for="email">Contact: </label>
+                <br> 
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Email" 
+                    required
+                />
+                <label for="phone"></label>
+                <input 
+                    type="tel" 
+                    name="phone" 
+                    id="phone" 
+                    placeholder="Phone number" 
+                    required
+                    pattern="[0-9]{8}"
+                />
+
+             </fieldset>
+
+             <br>
+             
+             <!-- Payment details -->
+             <fieldset class="payment">
+                <legend>Payment details</legend>
+                <label for="">Payment Method</label>
+                <br>
+                <select name="payment" id="payment" required>
+                    <option value="">Select payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="vipps">Vipps</option>
+                    <option value="run">Run from the bill</option>
+                </select>
+             </fieldset>
+             <br>
+             <br>
+             <section>
+                <input type="checkbox" name="terms" id="terms" required />
+                <label>
+                    I agree to the
+                    <a href="#">terms and conditions</a>
+                </label>
+                </section>
+             </section>
+
+             <br>
+
+             <input type="submit" value="Buy"/>
+        </form>
+      </main>
+      <footer>
+        <h3>contact me</h3>
+        <p>name</p>
+        <p>email</p>
+      </footer>
+    </div>
+  </body>
+</html>
