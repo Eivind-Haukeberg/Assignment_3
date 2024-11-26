@@ -1,3 +1,5 @@
+// CONSTS
+
 const questions = [
     {
       question: "What house is Harry Potter sorted into?",
@@ -68,6 +70,12 @@ const questions = [
   const restartButton = document.querySelector(".quiz__restart");
   const questionImage = document.querySelector(".quiz__image");
   
+
+
+// FUNCTIONS
+
+
+
   function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -90,7 +98,7 @@ const questions = [
     question.answers.forEach((answer, index) => {
       const button = document.createElement("button");
       button.textContent = answer;
-      button.classList.add("quiz__answer-btn");
+      button.classList.add("quiz__answer-button");
       button.addEventListener("click", () => selectAnswer(index, button));
       answerButtons.appendChild(button);
     });
@@ -102,7 +110,7 @@ const questions = [
   function selectAnswer(index, button) {
     selectedAnswerIndex = index;
   
-    const allButtons = document.querySelectorAll(".quiz__answer-btn");
+    const allButtons = document.querySelectorAll(".quiz__answer-button");
     allButtons.forEach((btn) => btn.classList.remove("selected"));
     button.classList.add("selected");
   
