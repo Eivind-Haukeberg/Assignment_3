@@ -75,7 +75,6 @@ const questions = [
 // FUNCTIONS
 
 
-
   function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -111,7 +110,7 @@ const questions = [
     selectedAnswerIndex = index;
   
     const allButtons = document.querySelectorAll(".quiz__answer-button");
-    allButtons.forEach((btn) => btn.classList.remove("selected"));
+    allButtons.forEach((button) => button.classList.remove("selected"));
     button.classList.add("selected");
   
     submitButton.disabled = false;
